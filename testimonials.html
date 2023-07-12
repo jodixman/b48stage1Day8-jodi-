@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/testi.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+</head>
+<body class="body1 dark-mode">
+
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="index.html" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="project.html" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="testimonials.html" class="header_lft-p hidden md:flex">Testimonal</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="contact.html" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="index.html">Home</a></li>
+            <li class="burger_li"><a href="project.html">My Project</a></li>
+            <li class="burger_li"><a href="contact.html">Contact</a></li>
+            <li class="burger_li"><a href="testimonials.html">Terimonials</a></li>
+        </ul>
+    </div>
+
+
+    <!----------- PROJECT START  ------------->
+    <div class="pt-20">
+        <h1 class="inproject r">My Testimonials</h1>
+    </div>
+
+    <div class="mx-auto flex flex-col justify-center items-center ">
+        <h1 class="text-3xl font-bold py-10">Rating By Star</h1>
+        
+        <div class="flex flex-row gap-x-5 font-bold" >
+
+            <h1 class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer group shadow-md hover:shadow-xl" onclick="allRating()">ALL</h1>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer group shadow-md hover:shadow-xl" onclick="filterRating(1)">
+                <span>1</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer group shadow-md hover:shadow-xl" onclick="filterRating(2)">
+                <span>2</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer group shadow-md hover:shadow-xl" onclick="filterRating(3)">
+                <span>3</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 "></i>
+            </div>
+
+
+        </div>
+    </div>
+
+    <a href="InProject.html" class="crd_grid inproject1" id="text2"></a>
+    <!----------- PROJECT END  ------------->
+    <script src="js/darkmode.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/HOF.js"></script>
+</body>
+</html>
